@@ -10,8 +10,12 @@ class Basic:
         self.__leftTime = 0
 
     def __real_get_access_token(self):
-        appId = "wxe76eb9f73643f074"
-        appSecret = "520cd136d20a3d33ec94e40ab4342fe9"
+        # BonjourAI
+        # appId = "wxe76eb9f73643f074"
+        # appSecret = "520cd136d20a3d33ec94e40ab4342fe9"
+        # BonjourChat
+        appId = "wx1a5d1d7cd4fedd7b"
+        appSecret = "38c2e3706e9bf5634ef70760ab410a2a"
         getUrl = ("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s" % (appId, appSecret))
         urlResp = requests.get(getUrl)
         urlResp = urlResp.json()

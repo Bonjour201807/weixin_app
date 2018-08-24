@@ -12,6 +12,8 @@ def parse_xml(web_data):
         return SubscribeMsg(xmlData)
     elif msg_type == 'image':
         return ImageMsg(xmlData)
+    elif msg_type == 'voice':
+        return VoiceMsg(xmlData)
 
 
 class Msg(object):
@@ -20,6 +22,8 @@ class Msg(object):
         self.FromUserName = xmlData.find('FromUserName').text
         self.CreateTime = xmlData.find('CreateTime').text
         self.MsgType = xmlData.find('MsgType').text
+        if xmlData.find('encrypt_type'):
+            self.Encrypt_type
 
 
 class TextMsg(Msg):
@@ -46,3 +50,12 @@ class ImageMsg(Msg):
         self.PicUrl = xmlData.find('PicUrl').text
         self.MediaId = xmlData.find('MediaId').text
         self.MsgId = xmlData.find('MsgId').text
+
+
+class VoiceMsg(Msg):
+    def __init__(self, xmlData):
+        Msg.__init__(self, xmlData)
+        self.MediaId = xmlData.find('MediaId').text
+        self.MsgId = xmlData.find('MsgId').text
+        self.Format = xmlData.find('Format').text
+        self.Recognition = xmlData.find('Recognition').text
