@@ -124,8 +124,6 @@ class PKCS7Encoder:
         # 获得补位所用的字符
         pad = chr(amount_to_pad)
         pad = bytes(pad, encoding='utf-8')
-        print('text', type(text))
-        print('pad * amount_to_pad', type(pad * amount_to_pad))
         return text + pad * amount_to_pad
 
     def decode(self, decrypted):

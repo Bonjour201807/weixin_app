@@ -41,36 +41,7 @@ if __name__ == '__main__':
     {
         "button": [
             {
-                "name": "搜索切换",
-                "sub_button": [
-                    {
-                        "type": "click",
-                        "name": "问答模式",
-                        "key": "bonjourChat_v1_search_0",
-                        "sub_button": []
-                    },
-                    {
-                        "type": "click",
-                        "name": "惯例模式",
-                        "key": "bonjourChat_v1_search_1",
-                        "sub_button": []
-                    },
-                    {
-                        "type": "click",
-                        "name": "情话模式",
-                        "key": "bonjourChat_v1_search_2",
-                        "sub_button": []
-                    },
-                    {
-                        "type": "click",
-                        "name": "恋爱策略",
-                        "key": "bonjourChat_v1_search_3",
-                        "sub_button": []
-                    }
-                ]
-            },
-            {
-                "name": "型男秘籍",
+                "name": "恋爱话术",
                 "sub_button": [
                     {
                         "type": "click",
@@ -95,14 +66,14 @@ if __name__ == '__main__':
                         "name": "恋爱策略",
                         "key": "bonjourChat_v1_topic_3",
                         "sub_button": []
-                    },
-                    {
-                        "type": "view",
-                        "name": "恋爱课程",
-                        "url": "https://mp.weixin.qq.com/mp/homepage?__biz=MzUzMTgwMTc3OQ%3D%3D&hid=1&sn=710fb8fdb2cb204fc199bf28c108d70b",
-                        "sub_button": []
                     }
                 ]
+            },
+            {
+                "name": "恋爱课程",
+                "type": "view",
+                "url": "https://mp.weixin.qq.com/mp/homepage?__biz=MzUzMTgwMTc3OQ%3D%3D&hid=1&sn=710fb8fdb2cb204fc199bf28c108d70b",
+                "sub_button": []
             },
             {
                 "name": "联系我们",
@@ -110,7 +81,7 @@ if __name__ == '__main__':
                     {
                         "type": "click",
                         "name": "商务合作",
-                        "key": "bonjourChat_v1_bussiness",
+                        "key": "bonjourChat_v1_business",
                         "sub_button": []
                     },
                     {
@@ -126,9 +97,9 @@ if __name__ == '__main__':
                         "sub_button": []
                     },
                     {
-                        "type": "click",
+                        "type": "view",
                         "name": "使用教程",
-                        "key": "bonjourChat_v1_handbook",
+                        "url": "https://mp.weixin.qq.com/mp/homepage?__biz=MzUzMTgwMTc3OQ%3D%3D&hid=2&sn=109c09d3b3ba88b42856e5f26f801506",
                         "sub_button": []
                     }
                 ]
