@@ -76,13 +76,12 @@ class Handel:
                 'open_id': toUser,
                 'create_time': createTime,
                 'msg_type': msgType,
-                'mode': 0
             }
             if msgType == 'text':
                 # 处理文本消息
                 msgId = recMsg.MsgId
                 receive_content = recMsg.Content
-                payload['query']=receive_content
+                payload['query'] = receive_content
                 response = requests.post('http://182.254.227.188:1889/v1/api/search', data=payload)
                 # print('response: ', response)
                 # print('response.text: ', response.text)
